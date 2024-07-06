@@ -36,10 +36,10 @@ persona = """
 
         Mangala  is an Engineer in the field of Telecommunications, AI and Robotics.
         Mangala obtained his Bachelor’s degree in Telectronics and Telecommunications Engineering
-        in Electronics and Telecommunications. He is also a serial entrepreneur having launched several
-        successful ventures, which is a one stop solution for learning 
-        and building vision projects. Prior to starting his entrepreneurial career, 
-        Mangala worked as a design engineer, evaluating and developing rapid prototypes.
+        in Electronics and Telecommunications. He is also developing automation prototypes, 
+        which is a one stop solution for learning and building AI and automation projects. 
+        Prior to starting his entrepreneurial career, Mangala worked as a design engineer, 
+        evaluating and developing rapid prototypes.
 
         Mangala's Youtube Channel: 
         Mangala's Email: contact@Mangala.com 
