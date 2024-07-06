@@ -2,8 +2,6 @@ import streamlit as st
 import google.generativeai as genai
 
 api_key = st.secrets["GOOGLE_API_KEY"]
-#Geminai API KEY: AIzaSyC9ek2o79U4tc8JAFcm5EIq3cl14viZVQc
-#genai.configure(api_key="AIzaSyC9ek2o79U4tc8JAFcm5EIq3cl14viZVQc")
 genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel('gemini-1.5-flash')
@@ -15,12 +13,12 @@ model = genai.GenerativeModel('gemini-1.5-flash')
 #streamlit run your_app.py --server.port 8502
 
 
-a = "Hi"
+a = ".. !"
 b = "Mangala"
 # print(f"I call {a}, {b}. !!!")
 
-st.title(f"{b}'s AI Test page, {a} .. !")
-st.write("Test with AI ")
+st.title(f"{b}'s AI Test page {a} ")
+#st.write("Test with AI ")
 
 col1, col2 = st.columns(2)
 with col1:
@@ -51,11 +49,11 @@ persona = """
 
 user_question = st.text_input("Ask a question")
 if st.button("Ask", use_container_width=400):
-    print(f"You ask: {user_question} .!")
+    #print(f"You ask: {user_question} .!")
     prompt = user_question
     #prompt = persona +"Here is the question that the user asked" + user_question
     response = model.generate_content(prompt)
-    print(response.text)
+    #print(response.text)
     st.write(response.text)
 
 
