@@ -49,11 +49,16 @@ persona = """
 
 user_question = st.text_input("Ask a question")
 if st.button("Ask", use_container_width=400):
+    if (user_question) =="":
+        #print("AAA")
+        user_question = "Hi"
     #print(f"You ask: {user_question} .!")
     prompt = user_question
     #prompt = persona +"Here is the question that the user asked" + user_question
     response = model.generate_content(prompt)
     #print(response.text)
     st.write(response.text)
+
+
 
 
