@@ -48,6 +48,7 @@ persona = """
         """
 
 user_question = st.text_input("Ask a question")
+#user_question = st.text_area("Ask a question")
 if st.button("Ask", use_container_width=400):
     if (user_question) =="":
         #print("AAA")
